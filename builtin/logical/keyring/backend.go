@@ -23,6 +23,8 @@ func Backend(conf *logical.BackendConfig) *backend {
 			b.pathKeys(),
 			b.pathListKeys(),
 			b.pathRotate(),
+			b.pathValueVersion(),
+			b.pathValue(),
 		},
 	}
 
